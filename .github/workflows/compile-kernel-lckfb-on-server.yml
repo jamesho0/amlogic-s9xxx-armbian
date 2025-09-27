@@ -13,9 +13,10 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "unifreq"
+        default: "jamesho0"
         type: choice
         options:
+          - jamesho0
           - unifreq
           - codesnas
       kernel_version:
@@ -181,4 +182,5 @@ jobs:
           body: |
             The kernel can be used to compile Armbian and OpenWrt.
             The kernel source code comes from: ${{ inputs.kernel_source }}
+
             The kernel compilation toolchain: ${{ inputs.kernel_toolchain }}
