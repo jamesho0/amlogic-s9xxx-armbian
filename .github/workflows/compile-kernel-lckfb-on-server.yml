@@ -87,7 +87,7 @@ on:
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -lckfb-bi8fvm
 
 env:
   TZ: Asia/Shanghai
@@ -184,3 +184,4 @@ jobs:
             The kernel source code comes from: ${{ inputs.kernel_source }}
 
             The kernel compilation toolchain: ${{ inputs.kernel_toolchain }}
+
